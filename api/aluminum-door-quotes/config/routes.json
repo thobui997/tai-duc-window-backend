@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aluminum-door-quotes",
+      "handler": "aluminum-door-quotes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aluminum-door-quotes/count",
+      "handler": "aluminum-door-quotes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aluminum-door-quotes/:id",
+      "handler": "aluminum-door-quotes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aluminum-door-quotes",
+      "handler": "aluminum-door-quotes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aluminum-door-quotes/:id",
+      "handler": "aluminum-door-quotes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aluminum-door-quotes/:id",
+      "handler": "aluminum-door-quotes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/glass-door-quotes",
+      "handler": "glass-door-quotes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glass-door-quotes/count",
+      "handler": "glass-door-quotes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glass-door-quotes/:id",
+      "handler": "glass-door-quotes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/glass-door-quotes",
+      "handler": "glass-door-quotes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/glass-door-quotes/:id",
+      "handler": "glass-door-quotes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/glass-door-quotes/:id",
+      "handler": "glass-door-quotes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

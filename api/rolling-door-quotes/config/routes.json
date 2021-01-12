@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rolling-door-quotes",
+      "handler": "rolling-door-quotes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rolling-door-quotes/count",
+      "handler": "rolling-door-quotes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rolling-door-quotes/:id",
+      "handler": "rolling-door-quotes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rolling-door-quotes",
+      "handler": "rolling-door-quotes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rolling-door-quotes/:id",
+      "handler": "rolling-door-quotes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rolling-door-quotes/:id",
+      "handler": "rolling-door-quotes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
