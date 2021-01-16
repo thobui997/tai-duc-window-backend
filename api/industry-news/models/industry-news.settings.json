@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "news",
   "info": {
-    "name": "industry-news"
+    "name": "tin-tuc-trong-nganh",
+    "description": ""
   },
   "options": {
     "increments": true,
