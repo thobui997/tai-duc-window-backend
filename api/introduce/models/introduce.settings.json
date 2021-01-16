@@ -19,9 +19,22 @@
       "type": "richtext",
       "required": true
     },
-    "youtube": {
+    "youtubeId": {
       "type": "string",
-      "default": "null"
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "youtubeAvatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }

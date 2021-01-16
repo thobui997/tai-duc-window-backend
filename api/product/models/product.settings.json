@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "advisories",
+  "collectionName": "products",
   "info": {
-    "name": "advisories",
+    "name": "product",
     "description": ""
   },
   "options": {
@@ -11,15 +11,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
-      "required": true,
-      "unique": true,
-      "maxLength": 200,
-      "minLength": 10
+      "required": true
     },
-    "image": {
-      "model": "file",
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -27,15 +28,14 @@
       "plugin": "upload",
       "required": false
     },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "body": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
-    "youtubeAvatar": {
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    },
+    "avatar": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
